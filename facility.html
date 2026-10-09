@@ -395,7 +395,7 @@ footer{margin-top:36px;padding-top:12px;border-top:1px solid var(--line);font-si
 
 // 응답을 모아 저장 서버(Google Apps Script)로 보낸다. 연락처를 적은 경우 동의 항목을 먼저 점검한다
 (function(){
-  var CFG={form:"facility",version:"1.0",endpoint:"",contact:["q15_dept", "q15_name", "q15_tel", "q15_mail"]};
+  var CFG={form:"facility",version:"1.0",endpoint:"https://script.google.com/macros/s/AKfycbxzLKOSgVS2Px9jQcODNtm18UuHpy77lsth8hKkR4jqTznyighWJgehZywhZucwYHRk/exec",contact:["q15_dept", "q15_name", "q15_tel", "q15_mail"]};
   function label(el){var s=el.closest("label");s=s&&s.querySelector("span");if(!s)return el.id;var t=(s.firstChild&&s.firstChild.textContent)||s.textContent;return t.replace(/\s+/g," ").trim();}
   function collect(){
     var d={};
